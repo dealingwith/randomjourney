@@ -27,7 +27,7 @@ message_params = {:from    => 'daniel@danielsjourney.com',
                   :to      => "dealingwith@gmail.com",
                   :subject => 'Here is your random danielsjourney post!',
                   :html    => link_tag}
-mg_client.send_message "sandboxdcdb137c85e64d5b8aa75172dc343259.mailgun.org", message_params
+mg_client.send_message MAILGUN_SANDBOX, message_params
 
 # add the new link to the list in links.txt
 File.open(File.dirname(__FILE__) + "/links.txt","a+") { |f| f.puts(link_href + "\n") }
