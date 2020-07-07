@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+ruby '2.7.0'
 
 gem 'mechanize'
-gem 'mailgun-ruby'
+# gem 'mailgun-ruby'
