@@ -180,3 +180,5 @@
 /2005/02/09/171/
 /2008/10/16/my-day-yesterday/
 /2002/12/05/semantic-web/
+/2003/07/30/my-mozilla-experiment/
+/2006/03/10/spam-wisdom-of-the-day-6/

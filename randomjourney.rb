@@ -1,6 +1,4 @@
 require 'mechanize'
-# require 'mailgun'
-# load 'config.rb'
 
 # read file of links already sent out of text file
 old_links = File.readlines(File.dirname(__FILE__) + '/links.txt')
@@ -20,14 +18,5 @@ link_href = link.href
 link_text = link.text
 # create a new html string for the link
 puts 'http://daniel.industries' + link_href
-
-# mailgun email sending
-# mg_client = Mailgun::Client.new MAILGUN_API_KEY
-# message_params = {:from    => 'daniel@danielsjourney.com',  
-#                   :to      => "dealingwith@gmail.com",
-#                   :subject => 'Here is your random danielsjourney post!',
-#                   :html    => link_tag}
-# mg_client.send_message MAILGUN_SANDBOX, message_params
-
 # add the new link to the list in links.txt
 File.open(File.dirname(__FILE__) + "/links.txt","a+") { |f| f.puts(link_href + "\n") }
