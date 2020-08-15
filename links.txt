@@ -182,3 +182,5 @@
 /2002/12/05/semantic-web/
 /2003/07/30/my-mozilla-experiment/
 /2006/03/10/spam-wisdom-of-the-day-6/
+/2006/10/16/steve-museum/
+/2012/11/12/today-is-a-wonderful-day/
