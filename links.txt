@@ -235,3 +235,7 @@
 /2016/05/02/snapshots/
 /2002/10/22/3/
 /2004/06/30/moo-zeek/
+/2002/10/18/5/
+/2005/04/30/immersion-museum/
+/2003/04/18/Last-Night/
+/2008/07/20/noah-and-the-whale-5-years-time/
