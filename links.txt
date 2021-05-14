@@ -294,3 +294,15 @@
 /2002/12/25/Powazek-on-xmas/
 /2002/01/10/1/
 /2009/07/30/hello-world-2-2/
+/2001/09/19/48/
+/2007/01/07/this-is-what-i-remember-about-the-gig/
+/2005/04/30/sean-stewart/
+/2002/02/08/2/
+/2008/11/06/hope/
+/2007/09/09/turn-4/
+/2005/06/30/400/
+/2005/02/26/423/
+/2006/02/28/10-fundamental-rules-for-the-age-of-user-experience-technology/
+/2008/08/06/field-testinging-creativity-with-jim-coudal/
+/2017/07/26/title-case-all-posts-in-jekyll/
+/2008/07/30/skillz/
