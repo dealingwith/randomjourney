@@ -306,3 +306,8 @@
 /2008/08/06/field-testinging-creativity-with-jim-coudal/
 /2017/07/26/title-case-all-posts-in-jekyll/
 /2008/07/30/skillz/
+/2010/01/02/no-legendary-design-on-the-web/
+/2004/08/31/87/
+/2007/11/13/2363/
+/2006/01/25/how-to-enjoy-corporate-coffee/
+/2003/02/02/or-nonfiction-whatever/
