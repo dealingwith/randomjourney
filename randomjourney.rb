@@ -19,4 +19,6 @@ link_text = link.text
 # create a new html string for the link
 puts 'http://daniel.industries' + link_href
 # add the new link to the list in links.txt
-File.open(File.dirname(__FILE__) + "/links.txt","a+") { |f| f.puts(link_href + "\n") }
+File.open(File.dirname(__FILE__) + "/links.txt","a+") { |f| 
+  f.puts(link_href + "\n") 
+}
