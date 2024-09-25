@@ -1,4 +1,7 @@
-source 'https://rubygems.org'
-ruby '3.2.2'
+source "https://rubygems.org"
 
-gem 'mechanize'
+gem "mechanize"
+gem "typhoeus"
+gem "ruby-link-checker"
+gem "nokogiri"
+gem "amazing_print"
