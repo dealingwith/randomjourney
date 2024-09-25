@@ -1,5 +1,5 @@
 require "typhoeus"
-require "ruby-link-checker"
+require "ruby-link-checker" # https://github.com/dblock/ruby-link-checker/
 require "optparse"
 require "nokogiri"
 require "open-uri"
