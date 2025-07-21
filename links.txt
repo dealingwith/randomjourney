@@ -567,3 +567,6 @@
 /2004/10/03/Untitled/
 /2017/04/30/a-few-things-from-around-the-net/
 /2021/11/16/overload/
+/2017/12/17/saas-i-use/
+/2003/12/30/minutiae/
+/2005/04/22/On-Web-Design-3/
