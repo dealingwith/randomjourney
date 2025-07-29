@@ -33,7 +33,7 @@ links = link_check_page.links
 checker = LinkChecker::Typhoeus::Hydra::Checker.new
 
 links.each do |link|
-  checker.check link.href if link.href.start_with?("http")
+  checker.check link.href if link&.href&.start_with?("http")
 end
 
 # run the checks
