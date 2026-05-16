@@ -30,8 +30,18 @@ file_content = options[:filename] ? File.read(options[:filename]) : URI.open(opt
 # Parse the content as HTML
 doc = Nokogiri::HTML(file_content)
 
-# Extract URLs from link tags
-links = doc.css("article a").map { |link| link["href"] }.compact
+article = doc.at_css("article")
+
+unless article
+  warn "No <article> found"
+  exit 1
+end
+
+links = article.css("a[href]").map { |link| link["href"] }.compact
+
+puts "All links: #{doc.css("a[href]").size}"
+puts "Article links: #{doc.css("article a[href]").size}"
+puts "First article links: #{doc.at_css("article")&.css("a[href]")&.size || 0}"
 
 # create a new checker instance
 checker = LinkChecker::Typhoeus::Hydra::Checker.new

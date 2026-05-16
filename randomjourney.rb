@@ -38,14 +38,25 @@ unless old_links.include?(link_href)
 end
 
 # check links on that page
-link_check_page = mechanize.get("http://daniel.industries" + link_href)
-links = link_check_page.links
+doc = mechanize.get("http://daniel.industries" + link_href)
+article = doc.at_css("article")
+
+unless article
+  warn "No <article> found"
+  exit 1
+end
+
+links = article.css("a[href]").map { |link| link["href"] }.compact
+
+puts "All links: #{doc.css("a[href]").size}"
+puts "Article links: #{doc.css("article a[href]").size}"
+puts "First article links: #{doc.at_css("article")&.css("a[href]")&.size || 0}"
 
 # create a new checker instance
 checker = LinkChecker::Typhoeus::Hydra::Checker.new
 
 links.each do |link|
-  checker.check link.href if link&.href&.start_with?("http")
+  checker.check link if link.start_with?("http")
 end
 
 # run the checks
