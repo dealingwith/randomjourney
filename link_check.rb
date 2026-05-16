@@ -31,7 +31,7 @@ file_content = options[:filename] ? File.read(options[:filename]) : URI.open(opt
 doc = Nokogiri::HTML(file_content)
 
 # Extract URLs from link tags
-links = doc.css("a").map { |link| link["href"] }.compact
+links = doc.css("article a").map { |link| link["href"] }.compact
 
 # create a new checker instance
 checker = LinkChecker::Typhoeus::Hydra::Checker.new
