@@ -14,6 +14,7 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     http-cookie (1.0.7)
       domain_name (~> 0.5)
+    logger (1.7.0)
     mechanize (2.12.1)
       addressable (~> 2.8)
       base64
@@ -54,6 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   amazing_print
+  logger
   mechanize
   nokogiri
   ruby-link-checker
