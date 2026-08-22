@@ -592,3 +592,9 @@
 /2019/04/06/claude-parent/
 /2003/06/01/erik-benson-and-the-ideal-idea-database/
 /2025/04/05/escape-the-apocalypse/
+/2026/03/13/80-days/
+/2022/04/30/de-googling/
+/2023/12/30/salesforce-slack-quintessential-enshittification/
+/2008/06/23/howz-about-google-just-hosts-everything-for-everyone-for-alltime-kthxbye/
+/2019/02/22/when-kids-realize-their-whole-life-is-already-online/
+/2003/01/27/RSS-and-Semantic-Web/

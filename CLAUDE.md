@@ -8,7 +8,7 @@ This is a Ruby-based web scraping project for randomly selecting and checking li
 
 ## Ruby Environment
 
-- Ruby version: 3.2.2 (specified in `.ruby-version`)
+- Ruby version: 4.0.4 (specified in `.ruby-version`)
 - Dependencies managed via Bundler (see `Gemfile`)
 
 ## Common Commands
