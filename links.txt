@@ -617,3 +617,5 @@
 /2018/11/03/existential-crisis-of-the-fediverse/
 /2008/07/18/frustrations/
 /2003/01/15/Supreme-Court-Keeps-Copyright-Protections-7-2/
+/2020/08/28/the-goldilocks-principle-of-startup-engineering/
+/2014/02/12/thanks-for-ruining-the-internet/
