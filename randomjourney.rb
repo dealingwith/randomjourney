@@ -1,6 +1,7 @@
 require "mechanize"
 require "typhoeus"
 require "ruby-link-checker" # https://github.com/dblock/ruby-link-checker/
+require_relative "wayback_archive"
 
 # Get URL fragment from command line argument if provided
 url_fragment = ARGV[0]
@@ -39,6 +40,7 @@ end
 
 # check links on that page
 doc = mechanize.get("http://daniel.industries" + link_href)
+post_date = WaybackArchive.post_date(doc.uri.to_s, doc)
 article = doc.at_css("article")
 
 unless article
@@ -63,9 +65,11 @@ end
 checker.run
 checker.results.each_pair do |bucket, results|
   puts "#{bucket}: #{results.size}"
-  # if bucket == :error || bucket == :failure
   results.each do |result|
     puts "URL: #{result.result_uri}"
+    if bucket == :error || bucket == :failure
+      archive = WaybackArchive.find(result.result_uri.to_s, post_date)
+      puts "Wayback: #{archive || 'no archive found'}"
+    end
   end
-  # end
 end

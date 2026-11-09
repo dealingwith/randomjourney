@@ -4,6 +4,7 @@ require "optparse"
 require "nokogiri"
 require "open-uri"
 require "amazing_print"
+require_relative "wayback_archive"
 
 # Parse command line options
 options = {}
@@ -29,6 +30,7 @@ file_content = options[:filename] ? File.read(options[:filename]) : URI.open(opt
 
 # Parse the content as HTML
 doc = Nokogiri::HTML(file_content)
+post_date = WaybackArchive.post_date(options[:url], doc)
 
 article = doc.at_css("article")
 
@@ -59,6 +61,8 @@ checker.results.each_pair do |bucket, results|
   if bucket == :error || bucket == :failure
     results.each do |result|
       puts "URL: #{result.result_uri}"
+      archive = WaybackArchive.find(result.result_uri.to_s, post_date)
+      puts "Wayback: #{archive || 'no archive found'}"
     end
   end
 end
